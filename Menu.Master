@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="ProyectoGym.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="Estilos/EstiloMenu.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Goku's Gym</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul>
+  <li><a href="InicioAdmin.aspx">Inicio</a></li>
+  <li><a href="FacturacionAdmin.aspx">Facturación</a></li>
+  <li><a href="ProductosAdmin.aspx">Productos</a></li>
+  <li><a href="RutinasAdmin.aspx">Rutinas</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menú Personas</a>
+    <div class="dropdown-content">
+      <a href="ClienteAdmin.aspx">Clientes</a>
+      <a href="Usuarios.aspx">Usuarios</a>
+    </div>
+  </li>
+</ul>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
